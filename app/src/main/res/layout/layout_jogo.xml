@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff800080">"] "
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10.0sp">
+
+            <TextView
+                android:id="@id/textViewTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5.0sp"
+                android:drawablePadding="10.0sp"
+                android:gravity="center"
+                android:text="00:05"
+                android:textColor="#ffffa500"
+                android:textSize="20.0sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/imageView6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24.0sp"
+                android:padding="5.0sp"
+                android:text="0/15"
+                android:textColor="@color/laranja_intenso"
+                android:textSize="20.0sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@id/imageView6"
+                android:layout_width="25.0sp"
+                android:layout_height="25.0sp"
+                android:layout_marginEnd="24.0sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/stopwatch" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@id/camposouangola"
+            android:layout_width="fill_parent"
+            android:layout_height="160.0sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="24.0sp"
+            android:layout_marginTop="10.0sp"
+            android:layout_marginEnd="24.0sp"
+            android:background="@drawable/fundo_categoria"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10.0sp"
+            android:weightSum="10.0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10.0sp"
+                android:layout_weight="8.0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/idpergunta"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sou angolano"
+                    android:textColor="@color/laranja_intenso"
+                    android:textSize="20.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15.0dip"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/plataforma_resposta_a"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30.0sp"
+                android:layout_marginTop="14.0sp"
+                android:layout_marginEnd="30.0sp"
+                android:background="@drawable/fundo_categoria"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="1.0sp"
+                android:weightSum="10.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutA"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:id="@+id/lock23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:padding="1.0dip"
+                        android:text="A"
+                        android:textColor="@color/laranja_intenso"
+                        android:textSize="45.0sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24.0dip"
+                        android:layout_weight="8.0"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/lock23"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/resposta_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="9.0"
+                            android:padding="1.0dip"
+                            android:text="jkgugiugkgkugk"
+                            android:textColor="@color/laranja_intenso"
+                            android:textSize="14.0sp" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/plataforma_resposta_b"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30.0sp"
+                android:layout_marginTop="10.0sp"
+                android:layout_marginEnd="30.0sp"
+                android:background="@drawable/fundo_categoria"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="1.0sp"
+                android:weightSum="10.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutB"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:id="@+id/lock22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:padding="1.0dip"
+                        android:text="B"
+                        android:textColor="@color/laranja_intenso"
+                        android:textSize="45.0dip"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24.0dip"
+                        android:layout_weight="8.0"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/lock22"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/resposta_2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="9.0"
+                            android:text="Cultura geral"
+                            android:textColor="@color/laranja_intenso"
+                            android:textSize="14.0sp" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/plataforma_resposta_c"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30.0sp"
+                android:layout_marginTop="10.0sp"
+                android:layout_marginEnd="30.0sp"
+                android:background="@drawable/fundo_categoria"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="1.0sp"
+                android:weightSum="10.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutC"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:id="@+id/lock24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:padding="1.0dip"
+                        android:text="C"
+                        android:textColor="@color/laranja_intenso"
+                        android:textSize="45.0dip"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24.0dip"
+                        android:layout_weight="8.0"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/lock24"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/resposta_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="9.0"
+                            android:text="Cultura geral"
+                            android:textColor="@color/laranja_intenso"
+                            android:textSize="14.0sp" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/plataforma_resposta_d"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30.0sp"
+                android:layout_marginTop="10.0sp"
+                android:layout_marginEnd="30.0sp"
+                android:layout_marginBottom="30.0sp"
+                android:background="@drawable/fundo_categoria"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="1.0sp"
+                android:weightSum="10.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutD"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:id="@+id/lock25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:padding="1.0dip"
+                        android:text="D"
+                        android:textColor="@color/laranja_intenso"
+                        android:textSize="45.0dip"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24.0dip"
+                        android:layout_weight="8.0"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/lock25"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/resposta_4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="9.0"
+                            android:text="Cultura geral"
+                            android:textColor="@color/laranja_intenso"
+                            android:textSize="14.0sp" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
